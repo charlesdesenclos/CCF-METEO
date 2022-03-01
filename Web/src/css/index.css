@@ -1,0 +1,137 @@
+body {
+    font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: white;
+    background-image: url("../img/back.png");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 1%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #202225;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #5e8a7d;
+    border: 1px solid #2e4f52;
+}
+
+/* Set style for contenant */
+#container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #2e4f52;
+    border-radius: 10px;
+    background-color: #3b676aad;
+}
+
+.sub-container {
+    padding: 30px;
+}
+
+.title {
+    margin-top: 0;
+}
+
+/* Set style for form and table*/
+.form, .table {
+    padding: 30px;
+    border: 1px solid #5e8a7d;
+    border-radius: 10px;
+    background-color: #5e8a7dad;
+}
+
+form, table {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+thead, tbody {
+    display: block;
+}
+
+thead {
+    border-right: 10px solid #202225;
+}
+
+tbody {
+    height: 230px; 
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+table td, table th {
+    width: 25%;
+    padding: 8px;
+    border: 1px solid #2e4f52;
+}
+
+table th {
+    background-color: #467a7e;
+}
+  
+table tr:nth-child(even) {
+    background-color: #467a7e;
+}
+  
+table tr:hover {
+    background-color: #2e4f52;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    color: white;
+    background: #3b676a;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #2e4f52;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+ 
+/* Set style for all buttons */
+input[type=button] {
+    width: 100%;
+    color: white;
+    background: #3b676a;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #2e4f52;
+    border-radius: 10px;
+}
+
+input[type=button]:hover {
+    background-color: #5e8a7d;
+}
+
+@media screen and (max-width: 1200px) {
+    #container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        width: 80%;
+    }
+    .sub-container {
+        padding: 0;
+    }
+}

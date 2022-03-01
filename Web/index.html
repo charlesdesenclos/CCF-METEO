@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='src/css/index.css'>
+    <title>STATION METEO - VELMAN</title>
+</head>
+<body>
+    <div id="container">
+        <h1 class="title">STATION METEO - VELMAN</h1>
+        <div id="connexion" class="sub-container">
+            <div class="form">
+                <h2 class="title">Connexion</h2>
+                <form>
+                    <input type="text" id="serverName" placeholder="Entrez l'adresse IP du serveur" required>
+                    <input type="text" id="hostName" placeholder="Entrez l'adresse IP de la BDD" required>
+                    <input type="text" id="userName" placeholder="Entrez l'identifiant de la BDD" required>
+                    <input type="password" id="password" placeholder="Entrez le MDP de la BDD" required>
+                    <input type="text" id="dbName" placeholder="Entrez votre nom de table" required>
+                    <input type="button" id="connect" value="Se Connecter">
+                </form>
+            </div>
+        </div>
+        <div id="table" class="sub-container">
+            <div class="table">
+                <form>
+                    <input type="button" id="disconnect" value="Se Déconnecter">
+                </form>
+                <h2 class="title">Tableau de Valeurs</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Valeur Brute</th>
+                            <th>Tension (V)</th>
+                            <th>Temperature (°C)</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="src/js/socket.js"></script>
+</body>
+</html>

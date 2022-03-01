@@ -1,0 +1,17 @@
+Etape 1: INstaller le siteWeb sur une VM appache( répérer son ip )
+Etape 2.1 : créer une bdd au nom de velman sur une VM Mariadb avec phpMyadmlin ( repérer son ip )
+Etape 2: Importerle fichier velman.sql (il est dans le dossier bdd) sur la base velman.
+ETape 3: Vérifier les privilèges sur la BDD ajotuer un user 
+exemple login "UsersiteWeb" password "UsersietWeb"
+Etape 4: brancher le boitier USB sur un pc windows et démarer le server C++ Velman.exe
+Etape 5: Le .exe utilise le port TCP 1234 ( vérifier votre par feu )
+Etape 6: Ouvrir l'application web index.html via ip du server web
+Etape 7: rentrer les informations dans le formulaire :
+-> ip du server C++ ( ip pc windows )
+-> ip du server de bdd ( ip VM phpmyadmin )
+-> login du user de la BDD exemple "UsersiteWeb" 
+-> Mdp du user de la BDD exemple "UsersiteWeb" 
+-> nom de la base de donnée ( normalement velman )
+Etape 8 : cliquer sur se Connecter
+
+Attention pour modifier le code source il faut un QT en 32 bit
